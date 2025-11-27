@@ -49,6 +49,26 @@ sudo apt install gcc g++ graphviz cppcheck clang-format binutils
   sudo apt install ./compiler-explorer-deb.deb
   ```
 
+## Usage
+
+```bash
+compiler-explorer
+```
+start screen with sample code | split screen with code and static analysis
+:-: | :-:
+<img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/35e9b13e-53bf-4a97-9571-2ad812bfe2eb" /> | <img width="1917" height="866" alt="image" src="https://github.com/user-attachments/assets/269c8dc3-955b-4179-b871-86fc72ac5be0" />
+
+
+split screen with sanitizer output and generated assembly | split screen with CFG and Header dependency tree
+:-: | :-:
+<img width="1917" height="868" alt="image" src="https://github.com/user-attachments/assets/26182925-6afc-49d5-ae9f-5e51111ac591" /> | <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/840a9751-1296-4c24-9005-ce34073c1884" />
+
+split screen with GIMPLE optimisation and RTL optimisation | Comparison of binary size when compiled using -O0 vs -Os
+:-: | :-:
+<img width="1916" height="865" alt="image" src="https://github.com/user-attachments/assets/e27a3a62-7138-4e7e-b228-77f26d5d826d" /> | <img width="1917" height="862" alt="image" src="https://github.com/user-attachments/assets/cbc71a04-2018-4497-acee-b20e0ded4f54" />
+
+
+
 
 ## Troubleshooting common issues
 
@@ -71,7 +91,9 @@ Pull requests are welcome\! For major changes, please open an issue first to dis
 - Clang doesn't support some visualisations, gcc is preferred.
 - Profiling doesn't work for code with compile-time/runtime errors.
 
+## Upcoming features
 
+- Cross compilation support
+- Support for other GNU Compiler Collection compilers
 
-```
-```
+**Developed by** - Ayush Prabhu
